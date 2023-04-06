@@ -30,6 +30,16 @@
 		p { text-align: left; }
 	</style>
 
+	<style>
+		.fragment.blur {
+		  filter: blur(5px);
+		}
+		.fragment.blur.visible {
+		  filter: none;
+		}
+	</style>
+	
+
 </head>
 
 <body>
@@ -37,7 +47,7 @@
 <div class="slides">
 
 
-<section data-markdown data-background-color="rgb(22, 4, 9)">
+<section data-markdown data-background-color="#2C3E50">
 <textarea data-template>
 
 ## Hi, I'm Jiancheng Peng &#x1F3C4
@@ -52,6 +62,7 @@
 > The real talent is resolute aspirations.
 ---
 
+
 ## More about me &#x1F50D;	
 
 - [GitHub](https://github.com/penjc/)  &nbsp;  <i class="fa-brands fa-github"></i>
@@ -62,22 +73,35 @@
 > The miracle appear in bad luck.
 
 ---
-
-
-## Major course &#x1F4AF;	
-
-- **C++ Design Patterns **
-	- Course taught in French
-- **Machine Learning **
-	- Course taught in English
-- **Data structure **
-	- Course taught in Chinese
-
+	
+<section>
+<font color=white size=200>Major course &#x1F4AF;</font>	
+</section>
+<section data-auto-animate>
+	<ul>
+	  <font color=white size=200>Major course &#x1F4AF;</font>
+	  <li>C++ Design Patterns </li>
+	  <li>Operating system</li>
+	  <li>Machine Learning</li>
+	  <li>Data structure</li>
+	</ul>
+  </section>
+  <section data-auto-animate>
+	<ul>
+	  <li>C++ Design Patterns </li>
+	  <li>Operating system</li>
+	  - Course taught in French
+	  <li>Machine Learning </li>
+	  - Course taught in English
+	  <li>Data structure</li>
+	</ul>
+  </section>
 ---
+
 
 ## Education &#x1F393;	
 
-- **undergraduate** 
+- **Undergraduate** 
 	- Shanghai University, China 
 
 ---
@@ -85,11 +109,13 @@
 ## Skills	  &#x1F528;
 
 - **Programming** 	&#x2328; 
-	- Python, C/C++, shell
+<p class="fragment custom blur">- Python, C/C++, shell</p>
 - **Data processing**
-    - Numpy, Pandas, Matplotlib
+<p class="fragment custom blur">- Numpy, Pandas, Matplotlib</p>
 - **Machine Learning, Deep Learning** &#x1F4CA;	
+<p class="fragment custom blur">- Tensorflow, keras</p>
 ---
+
 
 ##  Languages &#x1F30D;	
 - <span><b>Chinese  &nbsp;</b> <span> <img style="width:1em; height:1em; display: inline; position: relative; top: 0.6em" src="img/index/china.png" /> </span> </span>
@@ -99,15 +125,7 @@
 - <span><b>French  &nbsp;</b> <span> <img style="width:1em; height:1em; display: inline; position: relative; top: 0.6em" src="img/index/france.png" /> </span> </span>
 	- Professional proficiency
 
-<br>
-
-> To learn to swim, you must be in the water.
-
-
-
 ---
-
-
 
 ## Contact &#x260E;	
 - WeChat: `pjc0204`  &nbsp; <i class="fa-brands fa-weixin"></i> 
@@ -122,11 +140,11 @@
 
 ---
 
-## Thank you &nbsp;  <i class="fa-solid fa-handshake"></i>
-
+<section id="grand-finale">
+	<h2> Thank you &nbsp;  <i class="fa-solid fa-handshake"></i></h2>
+	<a href="#/0">Back to the first</a>
+</section>
 <br>
-
-> Thought correctly, life unbeaten.
 
 
 </textarea>
@@ -152,6 +170,9 @@
 		embedded: false,
 		mouseWheel: false,
 		hideCursorTime: 3000,
+		autoSlide: 3000,
+		loop: false,
+		touch: true,
 
 		// Learn about plugins: https://revealjs.com/plugins/
 		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom ],
